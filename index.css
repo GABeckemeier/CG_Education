@@ -1,0 +1,33 @@
+#title {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.Teachers {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.ChingShih, .JackSparrow, .WilliamKidd, .MaryRead, .BartRoberts {
+  display: flex;
+  flex-direction: column;
+  border: solid;
+  text-align: center;
+  padding: 1%;
+  width: 30%;
+}
+
+.Courses1, .Rating1, .Courses2, .Rating2, .Courses3, .Rating3, .Courses4, .Rating4, .Courses5, .Rating5 {
+  display: inline-flex;
+  flex-direction: column;
+  border-top: solid;
+  width: 49%;
+
+}
