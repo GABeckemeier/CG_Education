@@ -9,6 +9,10 @@ ul {
   flex-flow: row wrap;
 }
 
+body {
+  margin: 0 7em;
+}
+/*Teachers Section*/
 .Teachers {
   display: flex;
   flex-flow: row wrap;
@@ -30,4 +34,31 @@ ul {
   border-top: solid;
   width: 49%;
 
+}
+
+/*Students Section */
+.Students {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+.AnneBonny, .EdwardTeach, .FrancisDrake {
+  display: flex;
+  flex-flow: column wrap;
+  border: solid;
+  text-align: center;
+  width: 33%;
+}
+
+.ABInfo, .ETInfo, .FDInfo {
+  display: flex;
+  flex-flow: column wrap;
+  border-top: solid;
+  justify-content: center;
+}
+
+.Email1, .GPA1, .CourseS1 {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
 }
