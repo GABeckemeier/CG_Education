@@ -16,24 +16,40 @@ body {
 .Teachers {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
+.ChingShihBox, .JackSparrowBox, .WilliamKiddBox, .MaryReadBox, .BartRobertsBox {
+  display: flex;
+  flex-flow: column nowrap;
+  border: solid;
+  width: 30%;
+  text-align: center;
+  height: 25%;
+  margin: 1em;
+}
 .ChingShih, .JackSparrow, .WilliamKidd, .MaryRead, .BartRoberts {
   display: flex;
   flex-direction: column;
-  border: solid;
-  text-align: center;
-  padding: 1%;
-  width: 30%;
+  height: 7em;
+  line-height: .25em;
+  padding-top: 1.25em;
+}
+
+.XAxis1, .XAxis2, .XAxis3, .XAxis4, .XAxis5 {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .Courses1, .Rating1, .Courses2, .Rating2, .Courses3, .Rating3, .Courses4, .Rating4, .Courses5, .Rating5 {
-  display: inline-flex;
-  flex-direction: column;
+  display: flex;
+  flex-flow: column wrap;
   border-top: solid;
-  width: 49%;
+  width: 50%;
+}
 
+.Courses1, .Courses2, .Courses3, .Courses4, .Courses5 {
+  border-right: solid;
 }
 
 /*Students Section */
@@ -61,4 +77,24 @@ body {
   display: flex;
   flex-flow: row wrap;
   align-items: baseline;
+}
+/*Courses Section */
+.Courses {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.Swashbuckling {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  border: solid;
+  width: 50%;
+}
+
+.SwashInfo {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  border-left: solid;
 }
