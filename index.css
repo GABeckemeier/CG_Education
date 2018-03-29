@@ -58,43 +58,66 @@ body {
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
-.AnneBonny, .EdwardTeach, .FrancisDrake {
+.StudentBox {
   display: flex;
-  flex-flow: column wrap;
   border: solid;
-  text-align: center;
-  width: 33%;
-}
-
-.ABInfo, .ETInfo, .FDInfo {
-  display: flex;
-  flex-flow: column wrap;
-  border-top: solid;
+  flex-flow: column nowrap;
+  width: 30%;
+  margin: 1em;
   justify-content: center;
 }
-
-.Email1, .GPA1, .CourseS1 {
+.Student {
   display: flex;
-  flex-flow: row wrap;
-  align-items: baseline;
+  flex-flow: column wrap;
+  text-align: center;
+  border-bottom: solid;
 }
+.Details {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 0 2em;
+}
+.StudentInfo {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  text-align: center;
+}
+
 /*Courses Section */
 .Courses {
   display: flex;
   flex-flow: row wrap;
+  justify-content: flex-start;
 }
-
-.Swashbuckling {
-  display: inline-flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+.SwashBox {
+  display: flex;
+  flex-flow: row nowrap;
   border: solid;
-  width: 50%;
+  width: 40%;
+  height: 5em;
+  padding: 1em;
+  margin: 1em;
 }
-
-.SwashInfo {
-  display: inline-flex;
+.Course {
+  display: flex;
   flex-flow: column nowrap;
-  justify-content: space-between;
-  border-left: solid;
+  width: 45%;
+  line-height: .07em;
+  padding-left: 1em;
+  border-right: solid;
+}
+.Info {
+  display: flex;
+  flex-flow: column wrap;
+  width: 55%;
+  line-height: .07em;
+  padding-left: 1em;
+}
+.Teach {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
 }
