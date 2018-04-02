@@ -35,7 +35,7 @@ body {
   justify-content: center;
 }
 
-.ChingShihBox, .JackSparrowBox, .WilliamKiddBox, .MaryReadBox, .BartRobertsBox {
+.TeacherBox {
   display: flex;
   flex-flow: column nowrap;
   border: solid;
@@ -44,7 +44,7 @@ body {
   height: 25%;
   margin: 1em;
 }
-.ChingShih, .JackSparrow, .WilliamKidd, .MaryRead, .BartRoberts {
+.Captain {
   display: flex;
   flex-direction: column;
   height: 7em;
@@ -52,19 +52,19 @@ body {
   padding-top: 1.25em;
 }
 
-.XAxis1, .XAxis2, .XAxis3, .XAxis4, .XAxis5 {
+.XAxis {
   display: flex;
   flex-flow: row nowrap;
 }
 
-.Courses1, .Rating1, .Courses2, .Rating2, .Courses3, .Rating3, .Courses4, .Rating4, .Courses5, .Rating5 {
+.Class, .Rating {
   display: flex;
   flex-flow: column wrap;
   border-top: solid;
   width: 50%;
 }
 
-.Courses1, .Courses2, .Courses3, .Courses4, .Courses5 {
+.Class {
   border-right: solid;
 }
 
