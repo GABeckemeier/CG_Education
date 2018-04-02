@@ -3,12 +3,28 @@
   justify-content: center;
 }
 
-ul {
+header {
   display: flex;
-  justify-content: space-evenly;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  border-bottom: solid;
+  padding: 0 1.5em;
+  justify-content: space-between;
 }
-
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0 1.5em;
+}
+nav h3 {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0 1.5em;
+}
+#Divide {
+  border-right: solid;
+  border-left: solid;
+}
 body {
   margin: 0 7em;
 }
