@@ -1,0 +1,11 @@
+console.log('Yayyy!');
+var Teacher = ('Teacher: Jack Sparrow');
+var Department = ('Skill: Drinking');
+var Rating = ('Rating:');
+var Rating1 = (4.3);
+var Rating2 = (2.5);
+var Rating3 = (2.0);
+console.log(Teacher);
+console.log(Department);
+console.log(Rating, Rating1, Rating2, Rating3);
+console.log(Rating1 + Rating2 + Rating3 / 3);
