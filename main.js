@@ -1,20 +1,40 @@
 //Captains Page Calculations Example
 var Teacher = "Teacher: Jack Sparrow";
 var Department = "Skill: Drinking";
-var Rating = ('Rating: ');
+var Rating = 'Rating: ';
 var jsRatings = [4.3, 2.5, 2.0];
 function getRatingAvg (jsRatings) {
-  var avg = jsRatings.reduce((total, amount) => total += amount) / jsRatings.length;
-  return jsRatings;
+    var total = 0;
+    for (var i = 0; i < jsRatings.length; i++) {
+      total += jsRatings[i];
+    }
+    //above for loop attempts to add the indexes of jsRatings array
+    return total;
+    total /= jsRatings.length;
   }
-console.log(getRatingAvg(jsRatings));
+
+var newRating = prompt('We would like for you to review . Please enter a rating between 0.0 - 5.0?');
+getRatingAvg(jsRatings);
+function promptResponse (response) {
+if (newRating <= 5.0) {
+  alert("Thank you for the feedback!");
+} else {
+  alert("Yer rating should be between one and five fingers long ye scurvy dog");
+}
+return newRating;
+}
 
 
 function addTeacherRating (jsRatings, newRating) {
-  newRating =
-  jsRatings.push(newRating);
+  var response =
+  jsRatings.push();//add the new rating into the existing array
   return jsRatings;
 }
+addTeacherRating();
+
+
+
+console.log(jsRatings);
 console.log(Teacher);
 console.log(Department);
 console.log(Rating);
