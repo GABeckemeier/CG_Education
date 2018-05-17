@@ -4,35 +4,37 @@ var Department = "Skill: Drinking";
 var Rating = 'Rating: ';
 var jsRatings = [4.3, 2.5, 2.0];
 function getRatingAvg (jsRatings) {
-  var sum = 0;
-  for (i=0; i < jsRatings.length; i++) {
-    sum += jsRatings[i];
+    var total = 0;
+    for (var i = 0; i < jsRatings.length; i++) {
+      total += jsRatings[i];
+    }
+    //above for loop attempts to add the indexes of jsRatings array
+    return total;
+    total /= jsRatings.length;
   }
-  sum /= jsRatings.length;
-  //it'd be dope to round the number down (later)
-  return sum;
-}
+
+var newRating = prompt('We would like for you to review . Please enter a rating between 0.0 - 5.0?');
 getRatingAvg(jsRatings);
+function promptResponse (response) {
+if (newRating <= 5.0) {
+  alert("Thank you for the feedback!");
+} else {
+  alert("Yer rating should be between one and five fingers long ye scurvy dog");
+}
+return newRating;
+}
+
 
 function addTeacherRating (jsRatings, newRating) {
-  var newRating = Number;
-  if (newRating <= 5 && newRating >= 0) {
-  jsRatings.push(newRating);
-  }
-  return newRating;
+  var response =
+  jsRatings.push();//add the new rating into the existing array
+  return jsRatings;
 }
 addTeacherRating();
 
-function promptResponse (response) {
-  if (response <= 5 && response >= 0) {
-    alert("Cheers matey.");
-  } else {
-    alert("Ye bilge rat! Swab the poop deck! (Ratings should be between 0.0 and 5.0)");
-  }
-return response;
-}
-promptResponse();
 
+
+console.log(jsRatings);
 console.log(Teacher);
 console.log(Department);
 console.log(Rating += getRatingAvg(jsRatings));
