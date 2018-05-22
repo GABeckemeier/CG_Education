@@ -23,7 +23,9 @@ function addTeacherRating (jsRatings, newRating) {
 }
 addTeacherRating();
 
+/*var question = window.prompt("How piratey was your Captain this semester?");
 function promptResponse (response) {
+  var response = Number;
   if (response <= 5 && response >= 0) {
     alert("Cheers matey.");
   } else {
@@ -31,7 +33,7 @@ function promptResponse (response) {
   }
 return response;
 }
-promptResponse();
+promptResponse();*/
 
 console.log(Teacher);
 console.log(Department);
@@ -45,7 +47,7 @@ var skillsList = [
   ['Thieving', 'Learn to steal the booty']
 ];
 function courseFilter (skill, skillsList) {
-  skill = String;
+  var skill = String;
   if (skill == 'Drinking') {
     skill = skillsList[0];
   } else if (skill == 'Swashbuckling') {
@@ -62,7 +64,17 @@ function courseFilter (skill, skillsList) {
   }
 }
 //not perfect but pretty damn pleased
-//finish up final prompt for Challenge 2 using if/else shorthand
+var question = window.prompt('What skill are ye interested in?');
+function promptResponse (skill) {
+  if (skill == 'Drinking' || 'Swashbuckling' || 'Sailing' || 'Brawling' || 'Thieving') {
+    alert("Ye be worthy to learn the pirate's life.");
+  } else {
+    alert('Walk the plank you landlubber.');
+  }
+  return skill;
+}
+promptResponse();
+
 courseFilter();
 console.log(courseFilter());
 var csCourse = ('Swashbuckling');
