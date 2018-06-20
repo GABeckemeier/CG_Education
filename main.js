@@ -1,27 +1,25 @@
-//Captains Page Calculations Example
-var Teacher = "Teacher: Jack Sparrow";
-var Department = "Skill: Drinking";
-var Rating = 'Rating: ';
+//Initial Teacher prototype object
+function Teacher () {}
+Teacher.prototype = {
+  constructor: Teacher,
+  this.name: name,
+  this.department: department,
+  this.ratings: ratings,
+  addRating: function(newRating) {
+    var newRating = Number;
+    if (newRating <= 5 && newRating >= 0) {
+      this.ratings.push(newRating);
+    }
+  },
+  getRatingAvg: function(ratings) {
+    var sum = 0;
+    for (i = 0; i < this.ratings.length; i++) {
+      sum += this.ratings[i];
+    }
+    sum /= this.ratings.length;
+  }
+};
 var jsRatings = [4.3, 2.5, 2.0];
-function getRatingAvg (jsRatings) {
-  var sum = 0;
-  for (i=0; i < jsRatings.length; i++) {
-    sum += jsRatings[i];
-  }
-  sum /= jsRatings.length;
-  //it'd be dope to round the number down (later)
-  return sum;
-}
-getRatingAvg(jsRatings);
-
-function addTeacherRating (jsRatings, newRating) {
-  var newRating = Number;
-  if (newRating <= 5 && newRating >= 0) {
-  jsRatings.push(newRating);
-  }
-  return newRating;
-}
-addTeacherRating();
 
 /*var question = window.prompt("How piratey was your Captain this semester?");
 function promptResponse (response) {
@@ -35,9 +33,6 @@ return response;
 }
 promptResponse();*/
 
-console.log(Teacher);
-console.log(Department);
-console.log(Rating += getRatingAvg(jsRatings));
 //Skills Page Variables Example
 var skillsList = [
   ['Drinking', 'Why is all the rum gone?'],
@@ -77,6 +72,40 @@ promptResponse();
 
 courseFilter();
 console.log(courseFilter());
+
+//JS Challenge III Prompt Attempts
+var gradYearPrompt = window.prompt('What is yer year of graduation from Pirate Prep School?');
+function gradYearPromptResponse (Number) {
+  if (Number <= 2018) {
+    alert('Ye are worthy to enter these dirty halls');
+  } else if (Number > 2018) {
+    alert('Ye not be old enough to get scurvy, finish Pirate Prep first.');
+  } else {
+    alert('Enter a numerical year here, ding bat');
+  }
+  return Number;
+}
+gradYearPromptResponse (2020);
+
+var welcomePiratePrepGrad = function (rank) {
+  alert('Welcome to Pirate Charm School ' + rank + '.');
+  return rank;
+}
+var welcomePiratePrepStudent = function (rank) {
+  alert('Yer nothin but a lowly ' + rank + '. SCRAM!');
+  return rank;
+}
+
+function welcomeStudentsByGraduatingClass (gradMonth, gradYear, welcome) {
+  if (gradMonth == December && gradYear <= 2018) {
+    welcome = welcomePiratePrepGrad(Privateer);
+  } else if (gradMonth == May && gradYear <= 2018) {
+    welcome = welcomePiratePrepGrad(Privateer);
+  } else (gradYear > 2018) {
+    welcome = welcomePiratePrepStudent(BilgeRat);
+  }
+}
+//end of JS Challenge III Attempt
 var csCourse = ('Swashbuckling');
 var ChingShih = ('Ching Shih');
 var Term = ('Summer 2018');
